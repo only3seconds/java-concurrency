@@ -4,6 +4,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ *
+ * 串行的谜题解答器
+ * @param <P> 位置类
+ * @param <M> 移动类
+ */
 public class SequentialPuzzleSolver<P, M> {
     private final Puzzle<P, M> puzzle;
     private final Set<P> seen = new HashSet<P>();
@@ -17,6 +23,7 @@ public class SequentialPuzzleSolver<P, M> {
         return search(new PuzzleNode<P, M>(pos, null, null));
     }
 
+    //深度优先搜索
     private List<M> search(PuzzleNode<P, M> node) {
         if(!seen.contains(node.pos)) {
             seen.add(node.pos);
