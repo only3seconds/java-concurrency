@@ -15,7 +15,6 @@ import java.util.logging.*;
  */
 public class LifecycleWebServer {
     private ExecutorService exec = Executors.newCachedThreadPool();
-
     public void start() throws IOException {
         ServerSocket socket = new ServerSocket(80);
 
