@@ -5,7 +5,7 @@ import java.util.concurrent.*;
 import static java.util.concurrent.TimeUnit.NANOSECONDS;
 
 /**
- * 为任务设置时限. Fetching an advertisement in a time budget
+ * 为一个任务设置时限. Fetching an advertisement in a time budget
  */
 public class RenderWithTimeBudget {
     private static final Ad DEFAULT_AD = new Ad();
